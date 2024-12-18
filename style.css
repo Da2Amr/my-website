@@ -1,9 +1,11 @@
+/* Mengatur ulang margin dan padding untuk seluruh elemen */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Pengaturan dasar body */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f3f4f6;
@@ -11,9 +13,11 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    color: #2c3e50;
 }
 
-.invitation-container {
+/* Container utama */
+.container {
     background-color: white;
     border-radius: 10px;
     padding: 30px;
@@ -23,10 +27,11 @@ body {
     text-align: center;
 }
 
+/* Header */
 header h1 {
-    color: #2c3e50;
     font-size: 32px;
     margin-bottom: 20px;
+    color: #2980b9;
 }
 
 header p {
@@ -34,37 +39,18 @@ header p {
     color: #7f8c8d;
 }
 
-.event-details h2 {
-    color: #2980b9;
-    font-size: 24px;
+/* Form Input */
+.form-container {
     margin-bottom: 20px;
 }
 
-.details {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.details div {
-    width: 30%;
+input, textarea {
+    width: 100%;
+    padding: 10px;
     margin: 10px 0;
-}
-
-.details h3 {
-    font-size: 18px;
-    color: #34495e;
-}
-
-.details p {
+    border-radius: 5px;
+    border: 1px solid #ccc;
     font-size: 16px;
-    color: #7f8c8d;
-}
-
-.rsvp h2 {
-    margin-top: 30px;
-    color: #e67e22;
-    font-size: 24px;
 }
 
 button {
@@ -76,24 +62,37 @@ button {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-top: 20px;
-    position: relative;
-    z-index: 10;
 }
 
 button:hover {
     background-color: #2ecc71;
 }
 
-.hidden {
-    display: none;
+/* Bagian untuk menampilkan pesan ucapan */
+#messagesSection {
+    margin-top: 30px;
+    text-align: left;
 }
 
-#rsvpMessage {
-    margin-top: 20px;
+#messagesList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#messagesList li {
     background-color: #ecf0f1;
-    padding: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
     border-radius: 5px;
-    color: #16a085;
     font-size: 16px;
+}
+
+#messagesList li .name {
+    font-weight: bold;
+    color: #2980b9;
+}
+
+#messagesList li .message {
+    color: #7f8c8d;
+    margin-top: 5px;
 }
