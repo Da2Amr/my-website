@@ -1,0 +1,103 @@
+/* Mengatur ulang margin dan padding untuk seluruh elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Pengaturan dasar body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Tampilan undangan */
+.invitation-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+header h1 {
+    color: #2c3e50;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 18px;
+    color: #7f8c8d;
+}
+
+/* Gaya untuk bagian detail acara */
+.event-details h2 {
+    color: #2980b9;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.details div {
+    width: 30%;
+    margin: 10px 0;
+}
+
+.details h3 {
+    font-size: 18px;
+    color: #34495e;
+}
+
+.details p {
+    font-size: 16px;
+    color: #7f8c8d;
+}
+
+/* Gaya untuk bagian RSVP */
+.rsvp h2 {
+    margin-top: 30px;
+    color: #e67e22;
+    font-size: 24px;
+}
+
+button {
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #2ecc71;
+}
+
+/* Menyembunyikan pesan konfirmasi RSVP */
+.hidden {
+    display: none;
+}
+
+#rsvpMessage {
+    margin-top: 20px;
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-radius: 5px;
+    color: #16a085;
+    font-size: 16px;
+}
